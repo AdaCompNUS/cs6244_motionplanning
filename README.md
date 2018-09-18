@@ -90,7 +90,7 @@ https://docs.google.com/document/d/1dy3Zl7XDfvnEylQbOTgZ6XmN3IXKXdZUhXtyWUPQCkQ/
 
 # Troubleshooting
 
-1. Please do not use Anaconda python environment. ROS is not very compatible with Anaconda. Otherwise you might encounter with weird bugs.
+1. Please do not use Anaconda python environment. ROS is not very compatible with Anaconda. Otherwise you might meet weird bugs.
 2. If you met numpy errors when running `roslaunch autocar data1.launch`, please upgrade your numpy version by
 ```
 sudo apt install python-pip
