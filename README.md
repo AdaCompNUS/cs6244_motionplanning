@@ -35,11 +35,15 @@ the tutorial.
 
 ### 3. Clone the packges from this github repo
 
-`git clone https://github.com/AdaCompNUS/cs6244_motionplanning.git`
+```shell
+git clone https://github.com/AdaCompNUS/cs6244_motionplanning.git
+```
 
 To do this, you have to install *git* first, please do 
 
-`sudo apt install git`
+```shell
+sudo apt install git
+```
 
 Alternatively, you can direclty download the *zip* file
 
@@ -47,7 +51,7 @@ Alternatively, you can direclty download the *zip* file
 Add your path to $ROS_PACKAGE_PATH, so the system can find it.
 You can do it as follows:
 
-```
+```shell
 vim ~/.bashrc
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:[your path to]/cs6244_motionplanning/
 source ~/.bashrc
@@ -56,18 +60,20 @@ source ~/.bashrc
 ### 5. Build the packages
 
 Before you build the packages, you have to install two additional packages first. Please do
-```
+```shell
 sudo apt install ros-kinetic-map-server ros-kinetic-fake-localization
 ```
 
-```
+```shell
 cd [your path to]/cs6244_motionplanning/ 
 bash setup.bash
 ```
 
 ### 6. Install pygame
 
-`sudo apt-get install python-pygame`
+```shell
+sudo apt-get install python-pygame
+```
 
 ### 7. Try a simple task
 
@@ -80,19 +86,20 @@ Steps to follow:
 
 2. make sure the small pygame window in on the top of your screen
 
-3. Now you can drive the car in the simulator using the arrow keys. Congrats!
+3. Now you can drive the car in the simulator using the arrow keys. 
 
-# Dynamic model of the car
+### 8. Troubleshooting
 
-Please refer to the following google doc.
+1. Please do not use Anaconda python environment. ROS is not very compatible with Anaconda. Otherwise you might meet weird bugs. Or if you successfully managed to run the simulator correctly with it, please share your hacks with me :-)
+2. Please test your setting again by running `roslaunch autocar data1.launch`.  If you met numpy errors, please upgrade your numpy version by
 
-https://docs.google.com/document/d/1dy3Zl7XDfvnEylQbOTgZ6XmN3IXKXdZUhXtyWUPQCkQ/edit?usp=sharing
-
-# Troubleshooting
-
-1. Please do not use Anaconda python environment. ROS is not very compatible with Anaconda. Otherwise you might meet weird bugs.
-2. If you met numpy errors when running `roslaunch autocar data1.launch`, please upgrade your numpy version by
-```
+```shell
 sudo apt install python-pip
 sudo pip install --upgrade numpy
 ```
+
+# Highway Task
+
+Now you've successfully set up the simulator for your hw3. Congrats! 
+
+The next step is to get your hands on the assignment. Please go to [this sub-directory](https://github.com/AdaCompNUS/cs6244_motionplanning/tree/master/autocar/scripts/highway) for more information.
