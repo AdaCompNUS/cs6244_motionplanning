@@ -2,7 +2,7 @@
 
 ## How to run the highway task
 
-1. roslaunch autocar dataXX.launch (e.g., data1.launch)
+1. `roslaunch autocar dataXX.launch` (e.g., data1.launch)
 
 where dataXX is the name of the data set we gave to you.
 
