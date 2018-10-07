@@ -82,11 +82,11 @@ in the simulator.
 
 Steps to follow:
 
-1. `roslaunch autocar test.launch`
+1. `roslaunch autocar data1.launch`
 
 2. make sure the small pygame window in on the top of your screen
 
-3. Now you can drive the car in the simulator using the arrow keys. 
+3. Now press s and you should be able to see the cars moving. Congrats!
 
 ### 8. Troubleshooting
 
